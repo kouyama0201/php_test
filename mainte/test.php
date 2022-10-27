@@ -30,4 +30,13 @@
     echo $lines[1]. '<br>';
     echo $lines[2]. '<br>';
   }
+
+  // ファイル操作の流れ(ストリーム型)
+  $contents = fopen($contactFile, 'a+');
+
+  $addLine = '1行追記' . "\n";
+
+  fwrite($contents, $addLine);
+
+  fclose($contents);
 ?>
