@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "IDとパスワードを入力してください"
+AuthUserFile // echo __FILE__;で出力されたディレクトリ/.htpasswd
+require valid-user
