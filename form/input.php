@@ -169,6 +169,7 @@
 
     <?php if($pageFlag === 2): ?>
       <?php if($_POST['csrf'] === $_SESSION['csrfToken']): ?>
+        
         送信が完了しました。
         <?php unset($_SESSION['csrfToken']); ?>
       <?php endif; ?>
